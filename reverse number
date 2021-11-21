@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,rev=0;
+    cin>>n;
+    while(n--){
+        int a,rem,rev=0;
+        cin>>a;
+        while(a!=0){
+           rem=a%10;      
+     rev=rev*10+rem;    
+     a/=10;    
+        }
+    
+        cout<<rev<<endl;
+    }
+	// your code goes here
+	return 0;
+}
